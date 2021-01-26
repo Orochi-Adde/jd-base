@@ -1,10 +1,14 @@
-## 请仔细阅读[WIKI](https://github.com/EvineDeng/jd-base/wiki)和各文件注释，90%的问题都能找到答案
-
-## 如有帮助到你，请点亮Star
+## 请仔细阅读 [WIKI](https://github.com/EvineDeng/jd-base/wiki) 和各文件注释，95%的问题都能找到答案
 
 ## 如有二次使用，请注明来源
 
-本脚本是[https://github.com/LXK9301/jd_scripts](https://github.com/LXK9301/jd_scripts)的shell套壳工具，适用于以下系统：
+本脚本是以下两个仓库的shell套壳工具：
+
+[LXK9301/jd_scripts](https://github.com/LXK9301/jd_scripts)：主要是长期任务。
+
+[shylocks/Loon](https://github.com/shylocks/Loon)：主要是短期任务、一次性任务，正因为是短期的和一次性的，所以经常会有报错，报错就报错了，不要催我也不要去催[shylocks](https://github.com/shylocks)大佬。
+
+## 适用于以下系统
 
 - ArmBian/Debian/Ubuntu/OpenMediaVault/CentOS/Fedora/RHEL等Linux系统
 
@@ -22,12 +26,16 @@
 
 2. 将部分临时活动修改为了我的邀请码，已取得lxk0301大佬的同意。
 
+## 如有帮助你薅到羊毛，请不吝赏作者一杯茶水费
+
+![thanks](https://github.com/EvineDeng/jd-base/wiki/Picture/thanks.png)
+
 ## 更新日志
 
 > 只记录大的更新，小修小改不记录。
 
-2021-01-15，每天定时任务中git_pull.sh只执行2次；每天12:00前运行git_pull.sh时随机生成当天下午执行git_pull.sh的任务时间，生成的时间范围：13:00-20:59；每天12:00后运行git_pull.sh时随机生成第二天上行执行git_pull.sh的任务时间，生成的时间范围：7:00-11:59；不影响手动执行，手动执行会刷新下一次git_pull.sh的执行时间。如果本机上安装了pm2，则挂机程序以pm2启动，否则以nohup启动。
+2021-01-23，控制面板增加日志查看功能，Docker重启容器后可以使用`docker restart jd`，非Docker如果是pm2方式的请重启pm2进程`pm2 resatrt server.js`。
 
-## Star趋势
+2020-01-21，增加shylocks/Loon脚本。
 
-[![Stargazers over time](https://starchart.cc/EvineDeng/jd-base.svg)](https://starchart.cc/EvineDeng/jd-base)
+2021-01-15，如果本机上安装了pm2，则挂机程序以pm2启动，否则以nohup启动。
